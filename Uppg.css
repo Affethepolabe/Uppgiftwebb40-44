@@ -175,6 +175,7 @@ nav ul li a:hover {
         background-color: #fff;
         margin: 20px;
         margin-top: -20px;
+        border-radius: 10px;
     }
         #Prod1I{
             grid-area: Prod1I;
@@ -183,6 +184,8 @@ nav ul li a:hover {
             align-items: center;
             background-color: #fff;
             margin: 20px;
+            margin-bottom: -20px;
+            border-radius: 10px;
         }
             #Prod1P img{
                 width: 100%;
@@ -216,6 +219,7 @@ nav ul li a:hover {
         background-color: #fff;
         margin: 20px;
         margin-top: -20px;
+        border-radius: 10px;
     }   
         #Prod2I{
             grid-area: Prod2I;
@@ -224,6 +228,8 @@ nav ul li a:hover {
             align-items: center;
             background-color: #fff;
             margin: 20px;
+            margin-bottom: -20px;
+            border-radius: 10px;
         }
             #Prod2P img{
                 width: 100%;
@@ -257,6 +263,7 @@ nav ul li a:hover {
         background-color: #fff;
         margin: 20px;
         margin-top: -20px;
+        border-radius: 10px;
     }   
         #Prod3I{
             grid-area: Prod3I;
@@ -265,6 +272,8 @@ nav ul li a:hover {
             align-items: center;
             background-color: #fff;
             margin: 20px;
+            margin-bottom: -20px;
+            border-radius: 10px;
         }
             #Prod3P img{
                 width: 100%;
@@ -298,6 +307,7 @@ nav ul li a:hover {
         background-color: #fff;
         margin: 20px;
         margin-top: -20px;
+        border-radius: 10px;
     }   
         #Prod4I{
             grid-area: Prod4I;
@@ -306,6 +316,8 @@ nav ul li a:hover {
             align-items: center;
             background-color: #fff;
             margin: 20px;
+            margin-bottom: -20px;
+            border-radius: 10px;
         }
             #Prod4P img{
                 width: 100%;
