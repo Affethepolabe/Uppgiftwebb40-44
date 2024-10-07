@@ -1,0 +1,321 @@
+/*Header (Apply to all)*/
+
+body {
+    font-family:Arial, sans-serif;
+    margin: 0;
+    background-color: #000000;
+}
+
+.top{
+    color: whitesmoke;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    display: grid;
+    grid-template: 60px / 1fr 1fr;
+    grid-template-areas: 
+    "left right";
+}
+
+
+#left{
+    font-size:x-large;
+    grid-area: left;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+#right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    grid-area: right;
+    text-align: right;
+}
+
+#right a{
+    color: #202020;
+}
+
+#right a img{
+    padding-right: 10px;
+    scale: 3;
+}
+
+#left a img{
+    height: 100%;
+}
+
+
+
+
+nav{
+    position: sticky;
+    top: 65px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-size: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #222222;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    font-weight: 900;
+    background-color: rgb(234, 234, 234);
+    transition: 0.7s;
+}
+
+
+/*Hem.html*/
+
+.spacer{
+    height: 600px;
+    display: grid;
+    grid-template: 100% / 15% 70% 15;
+    grid-template-areas: 
+    "sideL mid sideR";
+}
+#sideL{
+    grid-area: sideL;
+    background-color: #000000;
+}
+#sideR{
+    grid-area: sideR;
+    background-color: #000000;
+}
+#mid{
+    grid-area: mid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Prod.html*/
+
+.spacerP{
+    height: 700px;
+    background-color: #fff;
+    display: grid;
+    grid-template: 100px 600px / 15% 70% 15%;
+    grid-template-areas: 
+    "top top top"
+    "sideLP midP sideRP";
+}
+#topP{
+    grid-area: top;
+    background-color: #000000;
+}
+#sideLP{
+    grid-area: sideLP;
+    background-color: #000000;
+}
+#sideRP{
+    grid-area: sideRP;
+    background-color: #000000;
+}
+#midP{
+    grid-area: midP;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#midP img{
+   scale: 0.7;
+}
+
+.Products{
+    background-color: #000;
+    display: grid;
+    grid-template: 500px 200px / 25% 25% 25% 25%;
+    grid-template-areas: 
+    "Prod1 Prod2 Prod3 Prod4"
+    "Prod1D Prod2D Prod3D Prod4D";
+}
+
+
+#Prod1{
+    background-color: #000;
+    grid-area: Prod1;
+    display: grid;
+    grid-template: 100px 400px / 1fr;
+    grid-template-areas: 
+    "Prod1I"
+    "Prod1P";  
+}
+    #Prod1P{
+        grid-area: Prod1P;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        margin: 20px;
+        margin-top: -20px;
+    }
+        #Prod1I{
+            grid-area: Prod1I;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            margin: 20px;
+        }
+            #Prod1P img{
+                width: 100%;
+                scale: 0.7;
+            }
+#Prod1D{
+    grid-area: Prod1D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 20px;
+}
+
+
+
+#Prod2{
+    background-color: #000;
+    grid-area: Prod2;
+    display: grid;
+    grid-template: 100px 400px / 1fr;
+    grid-template-areas: 
+    "Prod2I"
+    "Prod2P";
+}
+    #Prod2P{
+        grid-area: Prod2P;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        margin: 20px;
+        margin-top: -20px;
+    }   
+        #Prod2I{
+            grid-area: Prod2I;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            margin: 20px;
+        }
+            #Prod2P img{
+                width: 100%;
+                scale: 0.7;
+            }
+#Prod2D{
+    grid-area: Prod2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 20px;
+}
+
+
+
+#Prod3{
+    background-color: #000;
+    grid-area: Prod3;
+    display: grid;
+    grid-template: 100px 400px / 1fr; 
+    grid-template-areas: 
+    "Prod3I"
+    "Prod3P";
+}
+    #Prod3P{
+        grid-area: Prod3P;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        margin: 20px;
+        margin-top: -20px;
+    }   
+        #Prod3I{
+            grid-area: Prod3I;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            margin: 20px;
+        }
+            #Prod3P img{
+                width: 100%;
+                scale: 0.7;
+            }
+#Prod3D{
+    grid-area: Prod3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 20px;
+}
+
+
+
+#Prod4{
+    background-color: #000;
+    grid-area: Prod4;
+    display: grid;
+    grid-template: 100px 400px / 1fr;
+    grid-template-areas: 
+    "Prod4I"
+    "Prod4P";
+}
+    #Prod4P{
+        grid-area: Prod4P;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        margin: 20px;
+        margin-top: -20px;
+    }   
+        #Prod4I{
+            grid-area: Prod4I;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            margin: 20px;
+        }
+            #Prod4P img{
+                width: 100%;
+                scale: 0.6;
+            }
+#Prod4D{
+    grid-area: Prod4D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 20px;
+}
