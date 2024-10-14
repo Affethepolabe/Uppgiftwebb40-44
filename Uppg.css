@@ -6,12 +6,17 @@ body {
     background-color: #000000;
 }
 
-.top{
+.top a{
     color: whitesmoke;
     background-color: #000000;
+    text-decoration: none;
+    z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.top a:hover{
+    text-decoration: underline;
 }
 
 header{
@@ -20,12 +25,12 @@ header{
     background-color: #f0f0f0;
     color: rgb(0, 0, 0);
     padding: 5px;
+    z-index: 999;
     display: grid;
-    grid-template: 60px / 1fr 1fr;
+    grid-template: 60px / 15% 70% 15%;
     grid-template-areas: 
-    "left right";
+    "left mid right";
 }
-
 
 #left{
     font-size:x-large;
@@ -33,6 +38,11 @@ header{
     display: flex;
     justify-content: left;
     text-align: left;
+}
+
+#mid{
+    font-size: small;
+    font-family:monospace;
 }
 
 #right{
@@ -61,14 +71,15 @@ header{
 
 nav{
     position: sticky;
-    top: 65px;
+    top: 70px;
+    z-index: 999;
 }
 nav ul {
     list-style-type: none;
     padding: 5px;
     display: flex;
     justify-content: center;
-    background-color: #f0f0f0;
+    background-color: #2b83f9;
     margin: 0;
     font-size: 20px;
 }
@@ -78,15 +89,15 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: #222222;
+    color: #ffffff;
+    font-weight: 500;
     padding: 14px 20px;
     display: block;
 }
 
 nav ul li a:hover {
-    font-weight: 900;
-    background-color: rgb(234, 234, 234);
-    transition: 0.7s;
+    background-color: #3b90ff;
+    transition: 0.3s;
 }
 
 
@@ -117,8 +128,11 @@ nav ul li a:hover {
 
 /*Prod.html*/
 
+
 .spacerP{
-    height: 700px;
+    position: sticky;
+    top: 120px;
+    min-height: 700px;
     background-color: #fff;
     display: grid;
     grid-template: 100px 600px / 15% 70% 15%;
@@ -128,15 +142,19 @@ nav ul li a:hover {
 }
 #topP{
     grid-area: top;
-    background-color: #000000;
+    background-color: #fff;
+    text-align: center;
+}
+#topP h3{
+    text-decoration: underline;
 }
 #sideLP{
     grid-area: sideLP;
-    background-color: #000000;
+    background-color: #fff;
 }
 #sideRP{
     grid-area: sideRP;
-    background-color: #000000;
+    background-color: #fff;
 }
 #midP{
     grid-area: midP;
@@ -148,24 +166,37 @@ nav ul li a:hover {
    scale: 0.7;
 }
 
+/* PRODUCTS */
+
 .Products{
-    background-color: #000;
     display: grid;
-    grid-template: 500px 200px / 25% 25% 25% 25%;
+    z-index: 9;
+    grid-template: 500px 600px / 25% 25% 25% 25%;
     grid-template-areas: 
     "Prod1 Prod2 Prod3 Prod4"
     "Prod1D Prod2D Prod3D Prod4D";
 }
 
 
+
+.prodd{
+    background-color: #1e318b;
+    z-index: 9;
+    height: 1000px;
+}
+
+
+
 #Prod1{
-    background-color: #000;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,148,1) 0%, rgba(0,164,255,1) 100%); 
     grid-area: Prod1;
     display: grid;
     grid-template: 100px 400px / 1fr;
     grid-template-areas: 
     "Prod1I"
     "Prod1P";  
+    z-index: 9;
 }
     #Prod1P{
         grid-area: Prod1P;
@@ -176,6 +207,8 @@ nav ul li a:hover {
         margin: 20px;
         margin-top: -20px;
         border-radius: 10px;
+        box-shadow: 0px 3px 15px #393939 inset;
+        z-index: 9;
     }
         #Prod1I{
             grid-area: Prod1I;
@@ -186,30 +219,38 @@ nav ul li a:hover {
             margin: 20px;
             margin-bottom: -20px;
             border-radius: 10px;
+            box-shadow: 2px 3px 10px #393939 inset;
+            z-index: 10;
         }
             #Prod1P img{
                 width: 100%;
-                scale: 0.7;
+                scale: 0.88;
+                z-index: 9;
             }
 #Prod1D{
     grid-area: Prod1D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
+    font-style:oblique;
+    font-weight: 600;
+    padding-left: 20px;
     margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px #393939 inset;
+    z-index: 9;
 }
 
 
 
 #Prod2{
-    background-color: #000;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,148,1) 0%, rgba(0,164,255,1) 100%); 
     grid-area: Prod2;
     display: grid;
     grid-template: 100px 400px / 1fr;
     grid-template-areas: 
     "Prod2I"
     "Prod2P";
+    z-index: 9;
 }
     #Prod2P{
         grid-area: Prod2P;
@@ -220,6 +261,8 @@ nav ul li a:hover {
         margin: 20px;
         margin-top: -20px;
         border-radius: 10px;
+        box-shadow: 0px 3px 15px #393939 inset;
+        z-index: 9;
     }   
         #Prod2I{
             grid-area: Prod2I;
@@ -230,30 +273,38 @@ nav ul li a:hover {
             margin: 20px;
             margin-bottom: -20px;
             border-radius: 10px;
+            box-shadow: 2px 3px 10px #393939 inset;
+            z-index: 10;
         }
             #Prod2P img{
                 width: 100%;
-                scale: 0.7;
+                scale: 0.9;
+                z-index: 9;
             }
 #Prod2D{
     grid-area: Prod2D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
+    font-style:oblique;
+    font-weight: 600;
+    padding-left: 20px;
     margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px #393939 inset;
+    z-index: 9;
 }
 
 
 
 #Prod3{
-    background-color: #000;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,148,1) 0%, rgba(0,164,255,1) 100%); 
     grid-area: Prod3;
     display: grid;
     grid-template: 100px 400px / 1fr; 
     grid-template-areas: 
     "Prod3I"
     "Prod3P";
+    z-index: 9;
 }
     #Prod3P{
         grid-area: Prod3P;
@@ -264,6 +315,8 @@ nav ul li a:hover {
         margin: 20px;
         margin-top: -20px;
         border-radius: 10px;
+        box-shadow: 0px 3px 15px #393939 inset;
+        z-index: 9;
     }   
         #Prod3I{
             grid-area: Prod3I;
@@ -274,30 +327,38 @@ nav ul li a:hover {
             margin: 20px;
             margin-bottom: -20px;
             border-radius: 10px;
+            box-shadow: 2px 3px 10px #393939 inset;
+            z-index: 10;
         }
             #Prod3P img{
                 width: 100%;
-                scale: 0.7;
+                scale: 0.90;
+                z-index: 9;
             }
 #Prod3D{
     grid-area: Prod3D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
+    font-style:oblique;
+    font-weight: 600;
+    padding-left: 20px;
     margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px #393939 inset;
+    z-index: 9;
 }
 
 
 
 #Prod4{
-    background-color: #000;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,148,1) 0%, rgba(0,164,255,1) 100%); 
     grid-area: Prod4;
     display: grid;
     grid-template: 100px 400px / 1fr;
     grid-template-areas: 
     "Prod4I"
     "Prod4P";
+    z-index: 9;
 }
     #Prod4P{
         grid-area: Prod4P;
@@ -308,6 +369,8 @@ nav ul li a:hover {
         margin: 20px;
         margin-top: -20px;
         border-radius: 10px;
+        box-shadow: 0px 3px 15px #393939 inset;
+        z-index: 9;
     }   
         #Prod4I{
             grid-area: Prod4I;
@@ -318,16 +381,54 @@ nav ul li a:hover {
             margin: 20px;
             margin-bottom: -20px;
             border-radius: 10px;
+            box-shadow: 2px 3px 10px #393939 inset;
+            z-index: 10;
         }
             #Prod4P img{
                 width: 100%;
-                scale: 0.6;
+                scale: 0.8;
+                z-index: 9;
             }
 #Prod4D{
     grid-area: Prod4D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
-    margin: 20px;
+    font-style:oblique;
+    font-weight: 600;
+    padding-left: 20px;
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px #393939 inset;
+    z-index: 9;
+}
+
+#h{
+    font-size: x-large;
+}
+
+/* FOOTER AND INFO */
+
+.footer{
+    display: grid;
+    grid-template: 300px / 1fr 1fr 1fr;
+    grid-template-areas: 
+    "left mid right";
+    background-color: #222;
+}
+
+#leftF{
+    grid-area: left;
+    color: #fff;
+    padding: 50px;
+}
+
+#midF{
+    grid-area: mid;
+    color: #fff;
+    padding: 50px;
+}
+
+#rightF{
+    grid-area: right;
+    color: #fff;
+    padding: 50px;
 }
