@@ -451,23 +451,36 @@ nav ul li a:hover {
 .spacerV{
     display: flex;
     justify-content: center;
-    z-index: 3;
+    align-items: center;
+    z-index: 2;
     background-color: rgba(0,164,255,1);
 }
 .spacerV::before{
-  z-index: 8;
+  z-index: 3;
   content: "";
   display: block;
   position: absolute;
   top: 100;
-  left: 0;
   width: 100%;
   height: 565px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
+.texovimg{
+    position: absolute;
+    color: #f0f0f0;
+    font-size: 80px;
+    z-index: 3;
+}
+.omoss{
+    position: absolute;
+    color: #f0f0f0;
+    font-size: x-large;
+    bottom: 120px;
+    
+    z-index: 3;
+}
 .spacerV img{
-    z-index: 2;
+    z-index: 1;
 }
 
 
